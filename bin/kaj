@@ -1,0 +1,24 @@
+#!/usr/bin/env node
+
+var fs = require('fs');
+var path = require('path');
+var kaj = require('..');
+
+if (process.argv.length < 3) {
+  var input = '';
+  process.stdin.setEncoding('utf8');
+  process.stdin.on('readable', function () {
+    var chunk = process.stdin.read();
+    if (chunk !== null) {
+      input += chunk;
+    }
+  });
+  process.stdin.on('end', function () {
+    process.stdout.write(kaj(input));
+  });
+} else {
+  var fs = require('fs');
+  var filePath = process.argv[2];
+  kaj.options.cwd = path.dirname(filePath);
+  process.stdout.write(kaj(fs.readFileSync(filePath, {encoding: 'utf8'})));
+}

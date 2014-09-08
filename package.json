@@ -1,0 +1,33 @@
+{
+  "name": "kaj",
+  "version": "0.10.0",
+  "description": "A Kaj to HTML5 parser for Kaj Markup Language.",
+  "bin": "bin/kaj",
+  "main": "lib/kaj.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jakwings/kaj.js.git"
+  },
+  "keywords": [
+    "Kaj",
+    "KajML",
+    "markup",
+    "reStructuredText",
+    "documentation",
+    "lightweight"
+  ],
+  "author": "Jak Wings <jakwings@gmail.com>",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.githubusercontent.com/jakwings/kaj.js/master/LICENSE.md"
+    }
+  ],
+  "dependencies": {
+    "clone": "~0.2.0",
+    "extend": "~2.0.0"
+  }
+}
