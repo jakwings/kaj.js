@@ -1,6 +1,6 @@
 {
   "name": "kaj",
-  "version": "0.10.0",
+  "version": "0.11.0",
   "description": "A Kaj to HTML5 parser for Kaj Markup Language.",
   "bin": "bin/kaj",
   "main": "lib/kaj.js",
